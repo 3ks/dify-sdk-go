@@ -17,6 +17,7 @@ const (
 	EventWorkflowFinished = "workflow_finished"
 	EventTTSMessage       = "tts_message"
 	EventTTSMessageEnd    = "tts_message_end"
+	EventMessageEnd       = "message_end"
 )
 
 // FileInput 结构体

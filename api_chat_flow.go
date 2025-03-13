@@ -61,6 +61,9 @@ func (api *API) RunStreamChatFlowWithHandler(ctx context.Context, request ChatMe
 					continue
 				}
 				handler.HandleStreamingResponse(streamResp)
+				if event.Event == EventMessageEnd {
+					return nil
+				}
 			}
 		}
 	}
